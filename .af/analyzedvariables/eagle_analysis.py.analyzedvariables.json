@@ -1,0 +1,40 @@
+{
+    "variables": {
+        "eagle_measurementsDf": {
+            "type": "DataFrame",
+            "columns": [
+                {
+                    "Name": "EagleName",
+                    "ColumnName": "EagleName",
+                    "ColumnType": 5
+                },
+                {
+                    "Name": "LeftWingLength_cm",
+                    "ColumnName": "LeftWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightWingLength_cm",
+                    "ColumnName": "RightWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "LeftTalonLength_cm",
+                    "ColumnName": "LeftTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightTalonLength_cm",
+                    "ColumnName": "RightTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "BeakLength_cm",
+                    "ColumnName": "BeakLength_cm",
+                    "ColumnType": 2
+                }
+            ],
+            "hasHeaders": false
+        }
+    }
+}

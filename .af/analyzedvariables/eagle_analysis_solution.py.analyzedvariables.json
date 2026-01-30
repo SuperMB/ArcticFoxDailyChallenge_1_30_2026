@@ -1,0 +1,90 @@
+{
+    "variables": {
+        "eagle_measurements_220Df": {
+            "columns": [
+                {
+                    "Name": "EagleName",
+                    "ColumnType": 0
+                },
+                {
+                    "Name": "LeftWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "LeftTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "BeakLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "Wingspan",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "AverageTalon",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "EagleMeasure",
+                    "ColumnType": 2
+                }
+            ],
+            "hasHeaders": false,
+            "type": "pandas.core.frame.DataFrame"
+        },
+        "colorCycle": {
+            "type": "list"
+        },
+        "colorCycleIndex": {
+            "type": "int"
+        },
+        "xTickLabels": {
+            "type": "list"
+        },
+        "eagle_measurementsDf": {
+            "columns": [
+                {
+                    "Name": "EagleName",
+                    "ColumnName": "EagleName",
+                    "ColumnType": 5
+                },
+                {
+                    "Name": "LeftWingLength_cm",
+                    "ColumnName": "LeftWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightWingLength_cm",
+                    "ColumnName": "RightWingLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "LeftTalonLength_cm",
+                    "ColumnName": "LeftTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "RightTalonLength_cm",
+                    "ColumnName": "RightTalonLength_cm",
+                    "ColumnType": 2
+                },
+                {
+                    "Name": "BeakLength_cm",
+                    "ColumnName": "BeakLength_cm",
+                    "ColumnType": 2
+                }
+            ],
+            "hasHeaders": false
+        }
+    }
+}

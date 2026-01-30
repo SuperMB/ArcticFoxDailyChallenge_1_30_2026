@@ -1,0 +1,60 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticfox "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport arcticfox "
+        }
+    ],
+    "243905359781288635": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('eagle_analysis.py') ",
+            "Existing": "arcticfox.projectpath('eagle_analysis.py') "
+        }
+    ],
+    "013905359781288635": [
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf = pd.read_csv('eagle_measurements.csv') ",
+            "Existing": "eagle_measurementsDf = pd.read_csv('eagle_measurements.csv') "
+        }
+    ],
+    "013905435794258635": [
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['Wingspan'] = eagle_measurementsDf['LeftWingLength_cm'] + eagle_measurementsDf['RightWingLength_cm'] ",
+            "Existing": "eagle_measurementsDf['Wingspan'] = eagle_measurementsDf['LeftWingLength_cm'] + eagle_measurementsDf['RightWingLength_cm'] "
+        }
+    ],
+    "013905236136318635": [
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['AverageTalon'] = (eagle_measurementsDf['LeftTalonLength_cm'] + eagle_measurementsDf['RightTalonLength_cm']) / 2 ",
+            "Existing": "eagle_measurementsDf['AverageTalon'] = (eagle_measurementsDf['LeftTalonLength_cm'] + eagle_measurementsDf['RightTalonLength_cm']) / 2 "
+        }
+    ],
+    "013905923205628635": [
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['EagleMeasure'] = eagle_measurementsDf['Wingspan'] * eagle_measurementsDf['AverageTalon'] / eagle_measurementsDf['BeakLength_cm'] ",
+            "Existing": "eagle_measurementsDf['EagleMeasure'] = eagle_measurementsDf['Wingspan'] * eagle_measurementsDf['AverageTalon'] / eagle_measurementsDf['BeakLength_cm'] "
+        }
+    ],
+    "243905435794258635": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('eagle_analysis.py') ",
+            "Existing": "arcticfox.projectpath('eagle_analysis.py') "
+        }
+    ],
+    "243905236136318635": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('eagle_analysis.py') ",
+            "Existing": "arcticfox.projectpath('eagle_analysis.py') "
+        }
+    ],
+    "243905923205628635": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('eagle_analysis.py') ",
+            "Existing": "arcticfox.projectpath('eagle_analysis.py') "
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "0000": [
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticfox\nfrom pandas.api.types import is_numeric_dtype\nfrom pandas.api.types import is_bool_dtype ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticfox\nfrom pandas.api.types import is_numeric_dtype\nfrom pandas.api.types import is_bool_dtype "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport arcticfox "
+        },
+        {
+            "PreviouslyGenerated": "import pandas as pd\nimport numpy as np\nimport arcticfox ",
+            "Existing": "import pandas as pd\nimport numpy as np\nimport arcticfox "
+        }
+    ],
+    "243905994544426959": [
+        {
+            "PreviouslyGenerated": "arcticfox.projectpath('eagle_analysis_solution.py') ",
+            "Existing": "arcticfox.projectpath('eagle_analysis_solution.py') "
+        }
+    ],
+    "013905994544426959": [
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df = pd.read_csv('eagle_measurements_220.csv') ",
+            "Existing": "eagle_measurements_220Df = pd.read_csv('eagle_measurements_220.csv') "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf = pd.read_csv('eagle_measurements.csv') ",
+            "Existing": "eagle_measurementsDf = pd.read_csv('eagle_measurements.csv') "
+        }
+    ],
+    "243905633002786959": [
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.analysis_needed(10002) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None)\narcticfox.analysis_needed(10002) "
+        },
+        {
+            "PreviouslyGenerated": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) ",
+            "Existing": "pd.set_option('display.width', 10000)\npd.set_option('display.max_columns', None) "
+        }
+    ],
+    "013905633002786959": [
+        {
+            "PreviouslyGenerated": "print(eagle_measurements_220Df.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(eagle_measurements_220Df.astype(str).fillna('').head()) #)1 "
+        },
+        {
+            "PreviouslyGenerated": "print(eagle_measurementsDf.astype(str).fillna('').head()) #)1 ",
+            "Existing": "print(eagle_measurementsDf.astype(str).fillna('').head()) #)1 "
+        }
+    ],
+    "013905254064076959": [
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df['Wingspan'] = eagle_measurements_220Df['LeftWingLength_cm'] + eagle_measurements_220Df['RightWingLength_cm'] ",
+            "Existing": "eagle_measurements_220Df['Wingspan'] = eagle_measurements_220Df['LeftWingLength_cm'] + eagle_measurements_220Df['RightWingLength_cm'] "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['Wingspan'] = eagle_measurementsDf['LeftWingLength_cm'] + eagle_measurementsDf['RightWingLength_cm'] ",
+            "Existing": "eagle_measurementsDf['Wingspan'] = eagle_measurementsDf['LeftWingLength_cm'] + eagle_measurementsDf['RightWingLength_cm'] "
+        }
+    ],
+    "013905319637726959": [
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df['AverageTalon'] = (eagle_measurements_220Df['LeftTalonLength_cm'] + eagle_measurements_220Df['RightTalonLength_cm']) / 2 ",
+            "Existing": "eagle_measurements_220Df['AverageTalon'] = (eagle_measurements_220Df['LeftTalonLength_cm'] + eagle_measurements_220Df['RightTalonLength_cm']) / 2 "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['AverageTalon'] = (eagle_measurementsDf['LeftTalonLength_cm'] + eagle_measurementsDf['RightTalonLength_cm']) / 2 ",
+            "Existing": "eagle_measurementsDf['AverageTalon'] = (eagle_measurementsDf['LeftTalonLength_cm'] + eagle_measurementsDf['RightTalonLength_cm']) / 2 "
+        }
+    ],
+    "013905141533816959": [
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df['EagleMeasure'] = eagle_measurements_220Df['Wingspan'] * eagle_measurements_220Df['AverageTalon'] / eagle_measurements_220Df['BeakLength_cm'] ",
+            "Existing": "eagle_measurements_220Df['EagleMeasure'] = eagle_measurements_220Df['Wingspan'] * eagle_measurements_220Df['AverageTalon'] / eagle_measurements_220Df['BeakLength_cm'] "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf['EagleMeasure'] = eagle_measurementsDf['Wingspan'] * eagle_measurementsDf['AverageTalon'] / eagle_measurementsDf['BeakLength_cm'] ",
+            "Existing": "eagle_measurementsDf['EagleMeasure'] = eagle_measurementsDf['Wingspan'] * eagle_measurementsDf['AverageTalon'] / eagle_measurementsDf['BeakLength_cm'] "
+        }
+    ],
+    "243905656096086959": [
+        {
+            "PreviouslyGenerated": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] ",
+            "Existing": "colorCycle = plt.rcParams['axes.prop_cycle'].by_key()['color'] "
+        }
+    ],
+    "043905656096086959": [
+        {
+            "PreviouslyGenerated": "colorCycleIndex = 0 ",
+            "Existing": "colorCycleIndex = 0 "
+        }
+    ],
+    "013905656096086959": [
+        {
+            "PreviouslyGenerated": "#ISSUE: can't assign to read-only property TrimStart of type 'MultiLanguageCode'\n\nxTickIndex = 0\nfor i, boxplotColumn in enumerate(eagle_measurements_220Df.columns):\n    if is_numeric_dtype(eagle_measurements_220Df[boxplotColumn]) and not is_bool_dtype(eagle_measurements_220Df[boxplotColumn]):\n        plt.violinplot(eagle_measurements_220Df[boxplotColumn],  positions=[xTickIndex])\n        xTickIndex += 1\n\nxTicks = []\nfor i, boxplotColumn in enumerate(eagle_measurements_220Df.columns):\n    if is_numeric_dtype(eagle_measurements_220Df[boxplotColumn]) and not is_bool_dtype(eagle_measurements_220Df[boxplotColumn]):\n        xTicks.append(boxplotColumn)\n\nplt.gca().set_xticklabels(xTicks)\nplt.gca().set_xticks(range(len(xTicks)))\n\n\n[[self.Changeable(self.PlotShow, 'plt.show()')]] ",
+            "Existing": "#ISSUE: can't assign to read-only property TrimStart of type 'MultiLanguageCode'\n\nxTickIndex = 0\nfor i, boxplotColumn in enumerate(eagle_measurements_220Df.columns):\n    if is_numeric_dtype(eagle_measurements_220Df[boxplotColumn]) and not is_bool_dtype(eagle_measurements_220Df[boxplotColumn]):\n        plt.violinplot(eagle_measurements_220Df[boxplotColumn],  positions=[xTickIndex])\n        xTickIndex += 1\n\nxTicks = []\nfor i, boxplotColumn in enumerate(eagle_measurements_220Df.columns):\n    if is_numeric_dtype(eagle_measurements_220Df[boxplotColumn]) and not is_bool_dtype(eagle_measurements_220Df[boxplotColumn]):\n        xTicks.append(boxplotColumn)\n\nplt.gca().set_xticklabels(xTicks)\nplt.gca().set_xticks(range(len(xTicks)))\n\n\n[[self.Changeable(self.PlotShow, 'plt.show()')]] "
+        },
+        {
+            "PreviouslyGenerated": "#***Violin: Creates a violin plot to show the distribution of data for 1 or more columns, shows a shape between the min and max of a column the show the distribution of data from the min to the max\n#***\n#***What type of violin plots would you like to create:\n#***- Violin plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as violin plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate",
+            "Existing": "#***Violin: Creates a violin plot to show the distribution of data for 1 or more columns, shows a shape between the min and max of a column the show the distribution of data from the min to the max\n#***\n#***What type of violin plots would you like to create:\n#***- Violin plots of all numeric columns or array? #> `select --default\n#***- The same, but on separate xy axes?  #> `select --separate\n#***or\n#***- One or more columns, series, or lists as violin plots? #> `select --x ?\n#***- The same, but on separate xy axes?  #> `select --x ? --separate"
+        },
+        {
+            "PreviouslyGenerated": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature ",
+            "Existing": "#****** --x ? ***\n#***--x sets the data or array to place on the X-axis.\n#***Can be a dataframe column, series, or list.\n#***- Example: --x Temperature "
+        },
+        {
+            "PreviouslyGenerated": "#ISSUE: can't assign to read-only property TrimStart of type 'MultiLanguageCode'\n\nplt.violinplot(eagle_measurements_220Df['EagleMeasure'],  positions=[0])\n\nxTickLabels = ['EagleMeasure']\nplt.gca().set_xticklabels(xTickLabels)\nplt.gca().set_xticks(range(len(xTickLabels)))\n\n\n[[self.Changeable(self.PlotShow, 'plt.show()')]] ",
+            "Existing": "# User changes detected\n#ISSUE: can't assign to read-only property TrimStart of type 'MultiLanguageCode'\n\nplt.violinplot(eagle_measurements_220Df['EagleMeasure'],  positions=[0])\n\nxTickLabels = ['EagleMeasure']\nplt.gca().set_xticklabels(xTickLabels)\nplt.gca().set_xticks(range(len(xTickLabels)))\n\n\n# [[self.Changeable(self.PlotShow, 'plt.show()')]] "
+        }
+    ],
+    "013905660716646959": [
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df.sort_values(by='EagleMeasure', inplace=True) ",
+            "Existing": "eagle_measurements_220Df.sort_values(by='EagleMeasure', inplace=True) "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurements_220Df.sort_values(by='EagleMeasure', ascending=False, inplace=True) ",
+            "Existing": "eagle_measurements_220Df.sort_values(by='EagleMeasure', ascending=False, inplace=True) "
+        },
+        {
+            "PreviouslyGenerated": "eagle_measurementsDf.sort_values(by='EagleMeasure', ascending=False, inplace=True) ",
+            "Existing": "eagle_measurementsDf.sort_values(by='EagleMeasure', ascending=False, inplace=True) "
+        }
+    ]
+}
